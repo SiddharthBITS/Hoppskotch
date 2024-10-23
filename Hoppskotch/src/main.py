@@ -116,7 +116,6 @@ class Main:
                                         ballPos.row += dr
                                         ballPos.col += dc
                                     
-
                             if ballFound and ballPos != initialBallPos:
 
                                 ballMove = Move(initialBallPos, ballPos)

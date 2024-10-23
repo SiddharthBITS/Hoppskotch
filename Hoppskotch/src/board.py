@@ -53,7 +53,7 @@ class Board:
             for possible_move in possibleMoves:
                 possible_move_row, possible_move_col = possible_move
                 if Square.in_range(possible_move_row, possible_move_col):
-                    if not self.squares[possible_move_row][possible_move_col].has_knight() and not self.squares[possible_move_row][possible_move_col].has_post() and not self.squares[possible_move_row][possible_move_col].has_ball():
+                    if self.squares[possible_move_row][possible_move_col].is_empty():
                         initial = Square(row, col)
                         final = Square(possible_move_row, possible_move_col)
                         move = Move(initial, final)
