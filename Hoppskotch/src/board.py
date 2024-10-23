@@ -86,6 +86,7 @@ class Board:
         knight.clear_moves()
         self.last_move = move
     
+    '''
     def expand_goal(self, color, direction):
         if color == 'white':
             if direction == 'right' and self.whiteGoal[1] != 7:
@@ -107,7 +108,7 @@ class Board:
                 self.squares[0][self.blackGoal[0] - 1].post = self.squares[0][self.blackGoal[0]].post
                 self.squares[0][self.blackGoal[0]].post = None
                 self.blackGoal[0] -= 1
-
+    '''
         
     def valid_move(self, knight, move):
         return move in knight.moves

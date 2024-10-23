@@ -90,4 +90,5 @@ class Game:
         self.next_player = 'white' if self.next_player == 'black' else 'black'
 
     def set_hover(self, row, col):
-        self.hovered = self.board.squares[row][col]
+        if row in range(ROWS) and col in range(COLS):
+            self.hovered = self.board.squares[row][col]
