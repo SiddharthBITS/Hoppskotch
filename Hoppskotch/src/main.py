@@ -22,7 +22,6 @@ class Main:
         dragger = game.dragger
         board = game.board
 
-
         while True:
             game.show_bg(screen)
             game.show_last_move(screen)
@@ -129,7 +128,6 @@ class Main:
                                     pyautogui.alert('Black Wins!!')
                                     pygame.quit()
                                     sys.exit()
-
                             
                             board.move(dragger.knight, move)
                             
